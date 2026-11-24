@@ -8,5 +8,57 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.border-red {
+    border: 1px solid red;
+}
+
+.wrapper {
+    max-width: 1141px;
+    margin: 0px auto;
+}
+
+.main-section {
+    background-color: #F2F7FF;
+    border-radius: 32px;
+}
+.main-section header {
+    margin: 32 36px;
+}
+
+.header-logo {
+    display: inline-flex;
+    align-items: flex-start;
+}
+
+.header-logo span {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    background: linear-gradient(
+        to right bottom,
+        #3a8ef6,
+        #2f7ffd,
+        #3b6eff,
+        #5358ff,
+        #6f3afa
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.header-logo img {
+    margin-top: -14px;
+    margin-left: -14px;
 }
