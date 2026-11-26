@@ -16,10 +16,6 @@ img {
     max-width: 100%;
 }
 
-.border-red {
-    border: 1px solid red;
-}
-
 .wrapper {
     max-width: 1141px;
     margin: 0 auto;
@@ -113,4 +109,109 @@ img {
 .header-button img {
     width: 24px;
     height: 24px;
+}
+
+/* Main Content (Hero) */
+.main-content {
+    margin-top: 76px;
+    padding-bottom: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 52px;
+}
+
+.main-content-column {
+    width: 50%;
+    position: relative;
+}
+
+.main-content-subtitle {
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #00BFA5;
+    margin-bottom: 12px;
+}
+
+.main-content-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.25;
+    color: #031432;
+    margin-bottom: 24px;
+}
+
+.main-content-text {
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #6C87AE;
+    margin-bottom: 32px;
+}
+
+.main-content-button {
+    padding: 16px 32px;
+}
+
+.main-content-media {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-slide {
+    display: block;
+    width: 100%;
+}
+
+/* Анимация вращения плюсиков */
+@keyframes spin-plus {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.main-content-plus-one {
+    position: absolute;
+    left: 100px;
+    top: -25px;
+    width: 64px;
+    animation: spin-plus 10s linear infinite;
+}
+
+.main-content-plus-two {
+    position: absolute;
+    left: -1px;
+    top: 45%;
+    width: 64px;
+    animation: spin-plus 7s linear infinite reverse;
+}
+
+.main-content-plus-three {
+    position: absolute;
+    right: 67px;
+    bottom: 50px;
+    width: 26px;
+    animation: spin-plus 8s linear infinite;
+}
+
+.main-content-plus-four {
+    position: absolute;
+    right: 70px;
+    top: 94px;
+    width: 16px;
+    animation: spin-plus 6s linear infinite reverse;
 }
